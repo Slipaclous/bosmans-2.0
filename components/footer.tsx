@@ -20,7 +20,8 @@ export function Footer() {
               alt="Bosmans"
               width={140}
               height={35}
-              className="invert mb-4"
+              className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300"
+              style={{ filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(3465%) hue-rotate(343deg) brightness(85%) contrast(120%)' }}
             />
             <p className="text-gray-400 text-sm">
               {language === 'fr' 
