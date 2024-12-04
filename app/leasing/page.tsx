@@ -1,5 +1,5 @@
-{/* Previous imports remain the same */}
 "use client";
+
 import { translations } from "@/lib/translations";
 import { useLanguage } from "@/lib/context/language-context";
 import { PremiumPartnerCard } from "./components/premium-partner-card";
