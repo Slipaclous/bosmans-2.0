@@ -1,5 +1,10 @@
 {/* Previous imports remain the same */}
-
+import { translations } from "@/lib/translations";
+import { useLanguage } from "@/lib/context/language-context";
+import { PremiumPartnerCard } from "./components/premium-partner-card";
+import { LEASING_PARTNERS } from "./data/partners";
+import { Card } from "@/components/ui/card";
+import { ExternalLink } from "lucide-react";
 export default function Leasing() {
   const { language } = useLanguage();
   const t = translations[language];
