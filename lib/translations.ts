@@ -1,0 +1,353 @@
+export type Language = 'fr' | 'nl';
+
+export const translations = {
+  fr: {
+    nav: {
+      home: 'Accueil',
+      about: 'À propos',
+      tires: 'Pneus',
+      rims: 'Jantes',
+      technical: 'Contrôle Technique',
+      leasing: 'Leasing',
+      contact: 'Contact'
+    },
+    common: {
+      learnMore: 'En savoir plus',
+      contactUs: 'Contactez-nous',
+      appointment: 'Prendre rendez-vous'
+    },
+    hero: {
+      title: 'Garage Pneus Expert',
+      subtitle: 'Votre spécialiste en pneus et réparations automobiles',
+      cta: 'Prendre rendez-vous'
+    },
+    openingHours: {
+      title: 'Nos Horaires',
+      currentStatus: 'Statut Actuel',
+      open: 'Ouvert',
+      closed: 'Fermé',
+      days: {
+        monday: 'Lundi',
+        tuesday: 'Mardi',
+        wednesday: 'Mercredi',
+        thursday: 'Jeudi',
+        friday: 'Vendredi',
+        saturday: 'Samedi',
+        sunday: 'Dimanche'
+      }
+    },
+    services: {
+      title: 'Nos Services',
+      tires: {
+        title: 'Services Pneus',
+        description: 'Montage, équilibrage et réparation de pneus par des experts'
+      },
+      repairs: {
+        title: 'Réparations',
+        description: 'Entretien et réparations mécaniques pour votre véhicule'
+      }
+    },
+    about: {
+      title: 'À Propos',
+      history: {
+        title: 'Notre Histoire',
+        description: 'Depuis plus de 10 ans, nous sommes votre partenaire de confiance pour tous vos besoins en pneus et automobile. Notre expertise et notre engagement envers la qualité nous ont établis comme une référence dans la région.'
+      },
+      values: [
+        {
+          title: 'Expertise',
+          description: 'Une équipe qualifiée et expérimentée à votre service'
+        },
+        {
+          title: 'Qualité',
+          description: 'Des produits et services haut de gamme'
+        },
+        {
+          title: 'Service',
+          description: 'Un accompagnement personnalisé et professionnel'
+        }
+      ]
+    },
+    tires: {
+      title: 'Nos Services Pneus',
+      services: [
+        {
+          title: 'Montage de Pneus',
+          description: 'Service professionnel de montage et équilibrage'
+        },
+        {
+          title: 'Géométrie',
+          description: 'Géométrie et parallélisme précis'
+        },
+        {
+          title: 'Conseil Personnalisé',
+          description: 'Expertise dans le choix des meilleurs pneus'
+        }
+      ],
+      brands: {
+        title: 'Marques Disponibles',
+        list: ['Michelin', 'Goodyear', 'Continental', 'Pirelli', 'Bridgestone', 'Dunlop', 'Hankook', 'Yokohama']
+      }
+    },
+    rims: {
+      title: 'Nos Jantes',
+      categories: [
+        {
+          title: 'Jantes Aluminium',
+          description: 'Légères et élégantes pour des performances optimales',
+          image: 'https://images.unsplash.com/photo-1611921059253-1938aa3c4e54?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        },
+        {
+          title: 'Jantes Acier',
+          description: 'Robustes et économiques pour un usage quotidien',
+          image: 'https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        },
+        {
+          title: 'Jantes Sport',
+          description: 'Design sportif pour un look dynamique',
+          image: 'https://images.unsplash.com/photo-1626847037657-fd3622613ce9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        }
+      ],
+      brands: {
+        title: 'Marques de Jantes',
+        list: ['BBS', 'OZ Racing', 'Enkei', 'Vossen', 'Work Wheels', 'Rotiform', 'HRE', 'ADV.1']
+      }
+    },
+    technical: {
+      title: 'Contrôle Technique',
+      description: {
+        title: 'Préparation au Contrôle Technique',
+        content: 'Nous préparons votre véhicule pour passer le contrôle technique en toute confiance. Notre équipe expérimentée effectue une inspection complète et réalise les ajustements nécessaires.'
+      },
+      steps: [
+        {
+          title: 'Pré-contrôle',
+          description: 'Inspection complète selon les critères officiels'
+        },
+        {
+          title: 'Réparations',
+          description: 'Correction des problèmes détectés'
+        },
+        {
+          title: 'Garantie',
+          description: 'Assurance de conformité aux normes en vigueur'
+        }
+      ]
+    },
+    leasing: {
+      title: 'Solutions Leasing',
+      intro: {
+        title: 'Leasing Automobile Professionnel',
+        description: 'Nous proposons des solutions de leasing flexibles adaptées à vos besoins professionnels. Gérez votre flotte facilement avec nos services complets.'
+      },
+      benefits: [
+        {
+          title: 'Coûts Maîtrisés',
+          description: 'Budget mensuel fixe et prévisible'
+        },
+        {
+          title: 'Flexibilité',
+          description: 'Durée et kilométrage adaptables'
+        },
+        {
+          title: 'Entretien Inclus',
+          description: 'Service complet sans surprises'
+        }
+      ]
+    },
+    contact: {
+      title: 'Contactez-Nous',
+      form: {
+        title: 'Envoyez-nous un message',
+        name: 'Votre nom',
+        email: 'Votre email',
+        phone: 'Votre téléphone',
+        message: 'Votre message',
+        submit: 'Envoyer'
+      },
+      address: 'Adresse',
+      phone: 'Téléphone',
+      email: 'Email',
+      hours: 'Horaires',
+      location: 'Entre Hernes et Enghien, Belgique',
+      weekdays: 'Lun-Ven: 8h-18h',
+      saturday: 'Sam: 9h-16h',
+      sunday: 'Dimanche: Fermé'
+    }
+  },
+  nl: {
+    // Dutch translations remain the same as they were complete and correct
+    nav: {
+      home: 'Home',
+      about: 'Over ons',
+      tires: 'Banden',
+      rims: 'Velgen',
+      technical: 'Technische Controle',
+      leasing: 'Leasing',
+      contact: 'Contact'
+    },
+    common: {
+      learnMore: 'Meer info',
+      contactUs: 'Contacteer ons',
+      appointment: 'Afspraak maken'
+    },
+    hero: {
+      title: 'Garage Banden Expert',
+      subtitle: 'Uw specialist in banden en autoreparaties',
+      cta: 'Afspraak maken'
+    },
+    openingHours: {
+      title: 'Openingsuren',
+      currentStatus: 'Huidige Status',
+      open: 'Open',
+      closed: 'Gesloten',
+      days: {
+        monday: 'Maandag',
+        tuesday: 'Dinsdag',
+        wednesday: 'Woensdag',
+        thursday: 'Donderdag',
+        friday: 'Vrijdag',
+        saturday: 'Zaterdag',
+        sunday: 'Zondag'
+      }
+    },
+    services: {
+      title: 'Onze Diensten',
+      tires: {
+        title: 'Bandendiensten',
+        description: 'Montage, balancering en reparatie van banden door experts'
+      },
+      repairs: {
+        title: 'Reparaties',
+        description: 'Onderhoud en mechanische reparaties voor uw voertuig'
+      }
+    },
+    about: {
+      title: 'Over Ons',
+      history: {
+        title: 'Onze Geschiedenis',
+        description: 'Al meer dan 10 jaar zijn wij uw vertrouwde partner voor al uw banden- en autobehoeften. Onze expertise en toewijding aan kwaliteit hebben ons tot een referentie in de regio gemaakt.'
+      },
+      values: [
+        {
+          title: 'Expertise',
+          description: 'Een gekwalificeerd en ervaren team tot uw dienst'
+        },
+        {
+          title: 'Kwaliteit',
+          description: 'Hoogwaardige producten en diensten'
+        },
+        {
+          title: 'Service',
+          description: 'Persoonlijke en professionele begeleiding'
+        }
+      ]
+    },
+    tires: {
+      title: 'Onze Bandendiensten',
+      services: [
+        {
+          title: 'Bandenmontage',
+          description: 'Professionele montage- en balanceringsdienst'
+        },
+        {
+          title: 'Uitlijning',
+          description: 'Nauwkeurige geometrie en parallellisme'
+        },
+        {
+          title: 'Persoonlijk Advies',
+          description: 'Expertise bij het kiezen van de beste banden'
+        }
+      ],
+      brands: {
+        title: 'Beschikbare Merken',
+        list: ['Michelin', 'Goodyear', 'Continental', 'Pirelli', 'Bridgestone', 'Dunlop', 'Hankook', 'Yokohama']
+      }
+    },
+    rims: {
+      title: 'Onze Velgen',
+      categories: [
+        {
+          title: 'Aluminium Velgen',
+          description: 'Licht en elegant voor optimale prestaties',
+          image: 'https://images.unsplash.com/photo-1611921059253-1938aa3c4e54?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        },
+        {
+          title: 'Stalen Velgen',
+          description: 'Robuust en economisch voor dagelijks gebruik',
+          image: 'https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        },
+        {
+          title: 'Sport Velgen',
+          description: 'Sportief design voor een dynamische look',
+          image: 'https://images.unsplash.com/photo-1626847037657-fd3622613ce9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        }
+      ],
+      brands: {
+        title: 'Velgmerken',
+        list: ['BBS', 'OZ Racing', 'Enkei', 'Vossen', 'Work Wheels', 'Rotiform', 'HRE', 'ADV.1']
+      }
+    },
+    technical: {
+      title: 'Technische Controle',
+      description: {
+        title: 'Voorbereiding op Technische Controle',
+        content: 'Wij bereiden uw voertuig voor om de technische controle met vertrouwen te doorstaan. Ons ervaren team voert een volledige inspectie uit en maakt de nodige aanpassingen.'
+      },
+      steps: [
+        {
+          title: 'Voorcontrole',
+          description: 'Volledige inspectie volgens officiële criteria'
+        },
+        {
+          title: 'Reparaties',
+          description: 'Correctie van gedetecteerde problemen'
+        },
+        {
+          title: 'Garantie',
+          description: 'Verzekering van conformiteit met geldende normen'
+        }
+      ]
+    },
+    leasing: {
+      title: 'Leasing Oplossingen',
+      intro: {
+        title: 'Professionele Autoleasing',
+        description: 'Wij bieden flexibele leasing oplossingen aangepast aan uw professionele behoeften. Beheer uw wagenpark eenvoudig met onze complete diensten.'
+      },
+      benefits: [
+        {
+          title: 'Beheerste Kosten',
+          description: 'Vast en voorspelbaar maandelijks budget'
+        },
+        {
+          title: 'Flexibiliteit',
+          description: 'Aanpasbare duur en kilometerstand'
+        },
+        {
+          title: 'Onderhoud Inbegrepen',
+          description: 'Complete service zonder verrassingen'
+        }
+      ]
+    },
+    contact: {
+      title: 'Contacteer Ons',
+      form: {
+        title: 'Stuur ons een bericht',
+        name: 'Uw naam',
+        email: 'Uw email',
+        phone: 'Uw telefoon',
+        message: 'Uw bericht',
+        submit: 'Verzenden'
+      },
+      address: 'Adres',
+      phone: 'Telefoon',
+      email: 'Email',
+      hours: 'Openingsuren',
+      location: 'Tussen Herne en Edingen, België',
+      weekdays: 'Ma-Vr: 8u-18u',
+      saturday: 'Za: 9u-16u',
+      sunday: 'Zondag: Gesloten'
+    }
+  }
+};
