@@ -84,8 +84,8 @@ export function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           © {new Date().getFullYear()}{' '}
           {language === 'fr'
-            ? 'Garage Pneus Expert. Tous droits réservés.'
-            : 'Garage Banden Expert. Alle rechten voorbehouden.'}
+            ? 'Bosmans Passion Pneu Herne. Tous droits réservés.'
+            : 'Bosmans Banden. Alle rechten voorbehouden.'}
         </div>
       </div>
     </footer>
