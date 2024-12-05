@@ -26,9 +26,6 @@ export default function Technical() {
           <div className="flex flex-col justify-center">
             <h2 className="text-2xl font-semibold mb-4">{t.technical.description.title}</h2>
             <p className="text-gray-600 mb-6">{t.technical.description.content}</p>
-            <Button className="w-fit bg-red-600 hover:bg-red-700">
-              {t.common.appointment}
-            </Button>
           </div>
         </div>
 

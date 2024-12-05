@@ -11,7 +11,7 @@ export function LanguageSwitcher() {
       variant="ghost"
       size="sm"
       onClick={toggleLanguage}
-      className="text-gray-600 hover:text-red-600"
+      className="text-gray-600 dark:text-white hover:text-red-600"
     >
       {language === 'fr' ? 'NL' : 'FR'}
     </Button>

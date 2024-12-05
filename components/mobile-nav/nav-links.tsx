@@ -28,7 +28,7 @@ export function NavLinks({ onLinkClick }: { onLinkClick: () => void }) {
           key={link.href}
           href={link.href}
           className={cn(
-            "block px-2 py-1 text-lg hover:text-red-600 transition-colors",
+            "block px-2 py-1 text-lg dark:hover:text-red-600 hover:text-red-600 transition-colors",
             pathname === link.href && "text-red-600 font-semibold"
           )}
         >
