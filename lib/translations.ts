@@ -34,7 +34,8 @@ export const translations = {
         friday: 'Vendredi',
         saturday: 'Samedi',
         sunday: 'Dimanche'
-      }
+      },
+      special:"Le garage sera fermé du 24/12 au 26/12/2024 inclus."
     },
     services: {
       title: 'Nos Services',
@@ -209,7 +210,8 @@ export const translations = {
         friday: 'Vrijdag',
         saturday: 'Zaterdag',
         sunday: 'Zondag'
-      }
+      },
+      special:"De garage zal gesloten zijn van 24/12 tot en met 26/12/2024."
     },
     services: {
       title: 'Onze Diensten',
