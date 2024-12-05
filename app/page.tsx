@@ -87,6 +87,7 @@ export default function Home() {
         <div>
           <h3 className="font-semibold text-foreground">{t.contact.phone}</h3>
           <p className="text-muted-foreground">02 396 11 84</p>
+          <p className="text-muted-foreground">0486/92.04.04</p>
         </div>
       </div>
       <div className="flex flex-col items-center md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">

@@ -33,7 +33,6 @@ export default function Technical() {
           {[
             { icon: Clipboard, title: t.technical.steps[0].title, description: t.technical.steps[0].description },
             { icon: Car, title: t.technical.steps[1].title, description: t.technical.steps[1].description },
-            { icon: AlertCircle, title: t.technical.steps[2].title, description: t.technical.steps[2].description },
           ].map((step, index) => (
             <Card key={index} className="p-6">
               <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">

@@ -18,7 +18,7 @@ export const translations = {
     },
     hero: {
       title: 'Garage Pneus Expert',
-      subtitle: 'Votre spécialiste en pneus et réparations automobiles',
+      subtitle: 'Votre spécialiste en pneus.',
       cta: 'Prendre rendez-vous'
     },
     openingHours: {
@@ -43,8 +43,8 @@ export const translations = {
         description: 'Montage, équilibrage et réparation de pneus par des experts'
       },
       repairs: {
-        title: 'Réparations',
-        description: 'Entretien et réparations mécaniques pour votre véhicule'
+        title: 'Préparations',
+        description: 'Petit entretien pour votre véhicule'
       }
     },
     about: {
@@ -193,7 +193,7 @@ export const translations = {
     },
     hero: {
       title: 'Garage Banden Expert',
-      subtitle: 'Uw specialist in banden en autoreparaties',
+      subtitle: 'Uw specialist in banden.',
       cta: 'Afspraak maken'
     },
     openingHours: {
@@ -218,8 +218,8 @@ export const translations = {
         description: 'Montage, balancering en reparatie van banden door experts'
       },
       repairs: {
-        title: 'Reparaties',
-        description: 'Onderhoud en mechanische reparaties voor uw voertuig'
+        title: 'Voorbereidingen',
+        description: 'Klein onderhoud aan uw voertuig'
       }
     },
     about: {

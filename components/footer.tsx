@@ -2,7 +2,7 @@
 
 import { useLanguage } from "@/lib/context/language-context";
 import { translations } from "@/lib/translations";
-import { MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
@@ -27,8 +27,8 @@ export function Footer() {
             />
             <p className="text-gray-400 text-sm mt-4">
               {language === 'fr'
-                ? 'Votre spécialiste en pneus et réparations automobiles depuis 1935'
-                : 'Uw specialist in banden en autoreparaties sinds 1935'}
+                ? 'Votre spécialiste en pneus depuis 1935'
+                : 'Uw specialist in banden sinds 1935'}
             </p>
           </div>
 
@@ -52,6 +52,7 @@ export function Footer() {
               <h3 className="text-lg font-semibold">{t.contact.phone}</h3>
             </div>
             <p className="text-gray-400">02 396 11 84</p>
+            <p className="text-gray-400">0486/92.04.04</p>
           </div>
 
           {/* Opening Hours */}
@@ -77,6 +78,7 @@ export function Footer() {
                 {language === 'fr' ? 'Fermé' : 'Gesloten'}
               </p>
             </div>
+            
           </div>
         </div>
 
@@ -86,6 +88,7 @@ export function Footer() {
           {language === 'fr'
             ? 'Bosmans Passion Pneu Herne. Tous droits réservés.'
             : 'Bosmans Banden. Alle rechten voorbehouden.'}
+            <a className="hover:text-red-600 block" href="https://www.gminor.dev"> Made by G-Minor</a>
         </div>
       </div>
     </footer>

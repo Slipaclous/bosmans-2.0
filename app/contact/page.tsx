@@ -52,6 +52,7 @@ export default function Contact() {
               <div>
                 <h3 className="font-semibold mb-1">{t.contact.phone}</h3>
                 <p className="text-gray-600">02 396 11 84</p>
+                <p className="text-gray-600">0486/92.04.04</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
