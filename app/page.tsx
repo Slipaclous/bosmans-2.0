@@ -4,6 +4,7 @@ import { MapPin, Phone, Clock, Wrench, Car } from "lucide-react";
 import { OpeningHours } from "@/components/opening-hours";
 import { useLanguage } from "@/lib/context/language-context";
 import { translations } from "@/lib/translations";
+import Image from "next/image";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -17,11 +18,21 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('logos/homepage/garage-back.png')",
+            filter: "brightness(50%)"
           }}
         />
         <div className="relative z-20 text-center text-white px-4">
-          <h1 className="text-5xl font-bold mb-4">{t.hero.title}</h1>
+          <Image
+            src="/logos/homepage/logo-pneus.png"
+            alt="Bosmans Enghien"
+            width={340}
+            height={35}
+            className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300 mx-auto "
+            style={{
+              filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(3465%) hue-rotate(343deg) brightness(85%) contrast(120%)',
+            }}
+          />
           <p className="text-xl">{t.hero.subtitle}</p>
         </div>
       </section>
@@ -60,36 +71,38 @@ export default function Home() {
       </section>
 
       {/* Contact Info Section */}
-      <section className="bg-background py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="flex items-center space-x-4">
-              <MapPin className="w-8 h-8 text-red-600 dark:text-red-400" />
-              <div>
-                <h3 className="font-semibold text-foreground">{t.contact.address}</h3>
-                <p className="text-muted-foreground">Edingsesteenweg 67, 1540 Herne</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Phone className="w-8 h-8 text-red-600 dark:text-red-400" />
-              <div>
-                <h3 className="font-semibold text-foreground">{t.contact.phone}</h3>
-                <p className="text-muted-foreground">02 396 11 84</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Clock className="w-8 h-8 text-red-600 dark:text-red-400" />
-              <div>
-                <h3 className="font-semibold text-foreground">{t.contact.hours}</h3>
-                <p className="text-muted-foreground">
-                  {t.contact.weekdays}<br />
-                  {t.contact.saturday}
-                </p>
-              </div>
-            </div>
-          </div>
+      {/* Contact Info Section */}
+<section className="bg-background py-16">
+  <div className="max-w-6xl mx-auto px-4">
+    <div className="grid gap-8 text-center md:text-left md:grid-cols-3">
+      <div className="flex flex-col items-center md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">
+        <MapPin className="w-8 h-8 text-red-600 dark:text-red-400" />
+        <div>
+          <h3 className="font-semibold text-foreground">{t.contact.address}</h3>
+          <p className="text-muted-foreground">Edingsesteenweg 67, 1540 Herne</p>
         </div>
-      </section>
+      </div>
+      <div className="flex flex-col items-center md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">
+        <Phone className="w-8 h-8 text-red-600 dark:text-red-400" />
+        <div>
+          <h3 className="font-semibold text-foreground">{t.contact.phone}</h3>
+          <p className="text-muted-foreground">02 396 11 84</p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">
+        <Clock className="w-8 h-8 text-red-600 dark:text-red-400" />
+        <div>
+          <h3 className="font-semibold text-foreground">{t.contact.hours}</h3>
+          <p className="text-muted-foreground">
+            {t.contact.weekdays}<br />
+            {t.contact.saturday}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
   );
 }

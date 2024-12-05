@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageSwitcher } from '@/components/language-switcher';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Navigation } from '@/components/navigation';
+import { MobileNav } from '@/components/mobile-nav/mobile-nav';
 import { Footer } from '@/components/footer';
 import Image from 'next/image';
 
@@ -34,18 +35,19 @@ export default function RootLayout({
             <header className="bg-background border-b sticky top-0 z-50">
               <nav className="max-w-6xl mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
-                  <Image
-                    src="/logos/site_logo/text-bosmans.png"
-                    alt="Bosmans"
-                    width={140}
-                    height={35}
-                    className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300"
-                    style={{ filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(3465%) hue-rotate(343deg) brightness(85%) contrast(120%)' }}
-                  />
+                <Image
+              src="/logos/site_logo/text-bosmans.png"
+              alt="Bosmans"
+              width={140}
+              height={35}
+              className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300"
+              style={{ filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(3465%) hue-rotate(343deg) brightness(85%) contrast(120%)' }}
+            />
                   <div className="flex items-center space-x-6">
                     <Navigation />
                     <LanguageSwitcher />
                     <ThemeToggle />
+                    <MobileNav />
                   </div>
                 </div>
               </nav>
