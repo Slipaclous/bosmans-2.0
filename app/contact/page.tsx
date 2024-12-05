@@ -51,14 +51,14 @@ export default function Contact() {
               <Phone className="w-6 h-6 text-red-600 mt-1" />
               <div>
                 <h3 className="font-semibold mb-1">{t.contact.phone}</h3>
-                <p className="text-gray-600">+32 XX XXX XX XX</p>
+                <p className="text-gray-600">02 396 11 84</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Mail className="w-6 h-6 text-red-600 mt-1" />
               <div>
                 <h3 className="font-semibold mb-1">{t.contact.email}</h3>
-                <p className="text-gray-600">contact@garagepneusexpert.be</p>
+                <p className="text-gray-600">bosmans.anne@outlook.com</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -77,7 +77,7 @@ export default function Contact() {
 
         <div className="rounded-lg overflow-hidden h-96">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20335.250510567875!2d4.0334015!3d50.7054321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3f1c5996dfd%3A0x40099ab2f4d5690!2sHerne%2C%20Belgium!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.040062207356!2d4.173255215740024!3d50.69604517951674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c1f9b582433b%3A0x4e273875e76f5d74!2sEdingsesteenweg%2067%2C%201540%20Herne%2C%20Belgium!5e0!3m2!1sen!2sus!4v1696364019240!5m2!1sen!2sus"
             width="100%"
             height="100%"
             style={{ border: 0 }}

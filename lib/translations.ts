@@ -169,9 +169,9 @@ export const translations = {
       phone: 'Téléphone',
       email: 'Email',
       hours: 'Horaires',
-      location: 'Entre Hernes et Enghien, Belgique',
-      weekdays: 'Lun-Ven: 8h-18h',
-      saturday: 'Sam: 9h-16h',
+      location: 'Edingsesteenweg 67, 1540 Herne',
+      weekdays: 'Lun-Ven: 8h-17h',
+      saturday: 'Sam: 8h-12h',
       sunday: 'Dimanche: Fermé'
     }
   },
@@ -345,8 +345,8 @@ export const translations = {
       email: 'Email',
       hours: 'Openingsuren',
       location: 'Tussen Herne en Edingen, België',
-      weekdays: 'Ma-Vr: 8u-18u',
-      saturday: 'Za: 9u-16u',
+      weekdays: 'Ma-Vr: 8u-17u',
+      saturday: 'Za: 8u-12u',
       sunday: 'Zondag: Gesloten'
     }
   }

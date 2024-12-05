@@ -13,7 +13,7 @@ import Image from 'next/image';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Garage Pneus Expert - Spécialiste Pneus et Réparations',
+  title: 'Bosmans banden pneus - Enghien-Hernes',
   description:
     'Votre garage spécialisé en pneus et réparations automobiles entre Hernes et Enghien. Services professionnels et expertise garantie.',
 };

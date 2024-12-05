@@ -56,7 +56,7 @@ export function TimelineSection({ language }: TimelineSectionProps) {
                   <Card className="inline-block p-6">
                     <h3 className="text-xl font-bold mb-2">{event.year}</h3>
                     <h4 className="text-lg font-semibold mb-2">{event.title[language]}</h4>
-                    <p className="text-gray-600">{event.description[language]}</p>
+                    <p className="text-gray-600 dark:text-white ">{event.description[language]}</p>
                   </Card>
                 </div>
                 <div className="w-4 h-4 rounded-full bg-red-600 border-4 border-white shadow" />

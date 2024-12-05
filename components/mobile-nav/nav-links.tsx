@@ -6,7 +6,7 @@ import { useLanguage } from "@/lib/context/language-context";
 import { translations } from "@/lib/translations";
 import { cn } from "@/lib/utils";
 
-export function NavLinks() {
+export function NavLinks({ onLinkClick }: { onLinkClick: () => void }) {
   const pathname = usePathname();
   const { language } = useLanguage();
   const t = translations[language];

@@ -28,7 +28,7 @@ export function Navigation() {
           key={link.href}
           href={link.href}
           className={cn(
-            "text-gray-600 hover:text-red-600 transition-colors",
+            "text-gray-600 dark:text-white hover:text-red-600 transition-colors",
             pathname === link.href && "text-red-600 font-semibold"
           )}
         >

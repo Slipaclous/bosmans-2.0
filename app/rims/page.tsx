@@ -14,26 +14,7 @@ export default function Rims() {
     <main className="py-16">
       <div className="max-w-6xl mx-auto px-4">
         {/* Hero Section */}
-        <div className="relative h-[400px] rounded-xl overflow-hidden mb-16">
-          <div className="absolute inset-0 bg-black/60 z-10" />
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1611921059253-1938aa3c4e54?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')"
-            }}
-          />
-          <div className="relative z-20 h-full flex flex-col items-center justify-center text-white px-4">
-            <h1 className="text-5xl font-bold mb-6">{t.rims.title}</h1>
-            <p className="text-xl mb-8 text-center max-w-2xl">
-              {language === 'fr' 
-                ? 'Découvrez notre sélection exclusive de jantes avec nos partenaires de confiance'
-                : 'Ontdek onze exclusieve selectie velgen met onze vertrouwde partners'}
-            </p>
-            <Button size="lg" className="bg-red-600 hover:bg-red-700">
-              {t.common.contactUs}
-            </Button>
-          </div>
-        </div>
+        
 
         {/* Partners Section */}
         <section className="mb-16">

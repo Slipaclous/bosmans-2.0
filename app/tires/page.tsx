@@ -33,7 +33,7 @@ export default function Tires() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {TIRE_PARTNERS.map((partner) => (
               <Card key={partner.name} className="p-6 hover:shadow-lg transition-shadow bg-card dark:bg-gray-800/30">
-                <div className="h-24 flex items-center justify-center mb-4 bg-white dark:bg-gray-700/50 rounded-lg p-4">
+                <div className="h-24 flex items-center justify-center mb-4 bg-white dark:bg-slate-500 rounded-lg p-4">
                   <img
                     src={partner.logo}
                     alt={`${partner.name} logo`}

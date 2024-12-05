@@ -31,7 +31,7 @@ export default function Leasing() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {LEASING_PARTNERS.standard.map((partner) => (
               <Card key={partner.name} className="p-6 hover:shadow-lg transition-shadow bg-card dark:bg-gray-800/30">
-                <div className="h-16 flex items-center justify-center mb-4 bg-white dark:bg-gray-700/50 rounded-lg p-3">
+                <div className="h-16 flex items-center justify-center mb-4 bg-white dark:bg-slate-500 rounded-lg p-3">
                   <img
                     src={partner.logo}
                     alt={`${partner.name} logo`}
