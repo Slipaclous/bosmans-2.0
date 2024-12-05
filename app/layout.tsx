@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: 'Bosmans banden pneus - Enghien-Hernes',
   description:
     'Votre garage spécialisé en pneus et réparations automobiles entre Hernes et Enghien. Services professionnels et expertise garantie.',
+  icons:{
+    icon:'/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +28,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
+       <head>
+       <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <ThemeProvider
           attribute="class"
