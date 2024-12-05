@@ -1,7 +1,7 @@
 export const WHEEL_PARTNERS = [
   {
     name: "Atraxion",
-    logo: "/logos/rims/atraxion.svg",
+    logo: "/logos/rims/atraxion.png",
     website: "https://www.atraxion.be",
     description: {
       fr: "Leader belge dans la distribution de jantes haut de gamme, Atraxion propose une sélection exclusive de designs contemporains et classiques.",
@@ -21,11 +21,11 @@ export const WHEEL_PARTNERS = [
         "Kwaliteitsgarantie"
       ]
     },
-    image: "https://images.unsplash.com/photo-1626847037657-fd3622613ce9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "logos/rims/atraxion-jantee.png"
   },
   {
     name: "Alcar",
-    logo: "/logos/rims/alcar.svg",
+    logo: "/logos/rims/alcar.png",
     website: "https://www.alcar.com",
     description: {
       fr: "Fabricant européen de référence, Alcar produit des jantes de haute qualité pour tous types de véhicules, alliant innovation et fiabilité.",
@@ -45,6 +45,6 @@ export const WHEEL_PARTNERS = [
         "Brede compatibiliteit"
       ]
     },
-    image: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "logos/rims/alcar-backgrounds.jpg"
   }
 ];

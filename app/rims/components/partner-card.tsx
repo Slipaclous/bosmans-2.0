@@ -40,7 +40,7 @@ export function PartnerCard({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         <div className="absolute bottom-4 left-4 right-4">
-          <div className="bg-white p-3 rounded-lg inline-block">
+          <div className=" p-3 rounded-lg inline-block">
             <img
               src={logo}
               alt={`${name} logo`}

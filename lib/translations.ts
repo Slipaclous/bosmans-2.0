@@ -117,12 +117,12 @@ export const translations = {
       title: 'Contrôle Technique',
       description: {
         title: 'Préparation au Contrôle Technique',
-        content: 'Nous préparons votre véhicule pour passer le contrôle technique en toute confiance. Notre équipe expérimentée effectue une inspection complète et réalise les ajustements nécessaires.'
+        content: "Notre garage vérifie l'état des pneus , le réglage des phares, les plaquettes et les disques de freins ainsi que les ammortisseurs et nous faisons éventuellement le petit entretien de votre voiture"
       },
       steps: [
         {
           title: 'Pré-contrôle',
-          description: 'Inspection complète selon les critères officiels'
+          description: 'Inspection complète des pneus et petit entretien'
         },
         {
           title: 'Réparations',
@@ -292,12 +292,12 @@ export const translations = {
       title: 'Technische Controle',
       description: {
         title: 'Voorbereiding op Technische Controle',
-        content: 'Wij bereiden uw voertuig voor om de technische controle met vertrouwen te doorstaan. Ons ervaren team voert een volledige inspectie uit en maakt de nodige aanpassingen.'
+        content: 'Onze garage controleren de staat van de banden, de afstelling van de lichten, de remblokken en remschijven, evenals de schokdempers, en we voeren eventueel het kleine onderhoud van uw auto uit.'
       },
       steps: [
         {
           title: 'Voorcontrole',
-          description: 'Volledige inspectie volgens officiële criteria'
+          description: 'Volledige bandeninspectie en klein onderhoud'
         },
         {
           title: 'Reparaties',

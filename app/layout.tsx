@@ -14,7 +14,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Garage Pneus Expert - Spécialiste Pneus et Réparations',
-  description: 'Votre garage spécialisé en pneus et réparations automobiles entre Hernes et Enghien. Services professionnels et expertise garantie.',
+  description:
+    'Votre garage spécialisé en pneus et réparations automobiles entre Hernes et Enghien. Services professionnels et expertise garantie.',
 };
 
 export default function RootLayout({
@@ -24,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -35,14 +36,17 @@ export default function RootLayout({
             <header className="bg-background border-b sticky top-0 z-50">
               <nav className="max-w-6xl mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
-                <Image
-              src="/logos/site_logo/text-bosmans.png"
-              alt="Bosmans"
-              width={140}
-              height={35}
-              className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300"
-              style={{ filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(3465%) hue-rotate(343deg) brightness(85%) contrast(120%)' }}
-            />
+                  <Image
+                    src="/logos/site_logo/text-bosmans.png"
+                    alt="Bosmans"
+                    width={140}
+                    height={35}
+                    className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300"
+                    style={{
+                      filter:
+                        'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(3465%) hue-rotate(343deg) brightness(85%) contrast(120%)',
+                    }}
+                  />
                   <div className="flex items-center space-x-6">
                     <Navigation />
                     <LanguageSwitcher />
@@ -52,7 +56,7 @@ export default function RootLayout({
                 </div>
               </nav>
             </header>
-            {children}
+            <main className="flex-grow">{children}</main>
             <Footer />
           </LanguageProvider>
         </ThemeProvider>

@@ -60,9 +60,6 @@ export default function Rims() {
               ? 'Notre équipe d\'experts est là pour vous guider dans le choix de vos jantes. Profitez de notre expertise pour trouver les jantes parfaites pour votre véhicule.'
               : 'Ons team van experts staat klaar om u te begeleiden bij het kiezen van uw velgen. Profiteer van onze expertise om de perfecte velgen voor uw voertuig te vinden.'}
           </p>
-          <Button size="lg" className="bg-red-600 hover:bg-red-700">
-            {t.common.contactUs}
-          </Button>
         </section>
       </div>
     </main>
