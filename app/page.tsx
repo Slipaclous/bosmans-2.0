@@ -30,7 +30,7 @@ export default function Home() {
             height={35}
             className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300 mx-auto "
             style={{
-              filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(3465%) hue-rotate(343deg) brightness(85%) contrast(120%)',
+              filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(1965%) hue-rotate(343deg) brightness(85%) contrast(120%)',
             }}
           />
           <p className="text-xl">{t.hero.subtitle}</p>
