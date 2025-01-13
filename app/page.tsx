@@ -44,13 +44,13 @@ export default function Home() {
           <div className="max-w-md mx-auto">
             <OpeningHours />
           </div>
-          <div className="max-w-md mx-auto m-5 bg-card p-6 rounded-lg border text-card-foreground ">
+          {/* <div className="max-w-md mx-auto m-5 bg-card p-6 rounded-lg border text-card-foreground ">
           <div className="w-12 h-12 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center">
             <AlertCircle className="w-8 h-8 text-red-600 dark:text-red-400"  
             />
             </div>
             <p>{t.openingHours.special}</p>
-          </div>
+          </div> */}
         </div>
         
       </section>
