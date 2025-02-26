@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Phone, Clock, Wrench, Car, AlertCircle } from "lucide-react";
+import { MapPin, Phone, Clock, Wrench, Car, AlertCircle, TriangleAlert } from "lucide-react";
 import { OpeningHours } from "@/components/opening-hours";
 import { useLanguage } from "@/lib/context/language-context";
 import { translations } from "@/lib/translations";
@@ -39,6 +39,11 @@ export default function Home() {
 
       {/* Opening Hours Section */}
       <section className="py-12 bg-background">
+        <div className="special-div text-red-600 flex justify-center py-6 ">
+
+      <TriangleAlert className="w-6 h-6 mx-2" />
+        <h2 className="text-2l font-bold text-center text-red-600 block"> {t.special.title}</h2>
+        </div>
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">{t.openingHours.title}</h2>
           <div className="max-w-md mx-auto">

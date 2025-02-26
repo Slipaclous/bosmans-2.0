@@ -18,8 +18,11 @@ export const translations = {
     },
     hero: {
       title: 'Garage Pneus Expert',
-      subtitle: 'Votre spécialiste en pneus.',
+      subtitle: 'Votre spécialiste en pneus, depuis 90 ans',
       cta: 'Prendre rendez-vous'
+    },
+    special:{
+      title:"L'été arrive à grand pas, n'oubliez pas de venir faire changer vos pneus!",
     },
     openingHours: {
       title: 'Nos Horaires',
@@ -194,8 +197,11 @@ export const translations = {
     },
     hero: {
       title: 'Garage Banden Expert',
-      subtitle: 'Uw specialist in banden.',
+      subtitle: 'Uw specialist in banden, voor 90 jaar',
       cta: 'Afspraak maken'
+    },
+    special:{
+      title:"De zomer staat voor de deur, vergeet niet uw banden te vervangen",
     },
     openingHours: {
       title: 'Openingsuren',
