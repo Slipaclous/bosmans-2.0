@@ -38,7 +38,7 @@ export const translations = {
         saturday: 'Samedi',
         sunday: 'Dimanche'
       },
-      special:"Le garage vous souhaite de joyeuse fêtes et sera fermé du 23/12 au 26/12/2024 inclus."
+      special:"Le garage sera fermé du 01/03 jusqu'au 03/03."
     },
     services: {
       title: 'Nos Services',
@@ -217,7 +217,7 @@ export const translations = {
         saturday: 'Zaterdag',
         sunday: 'Zondag'
       },
-      special:"de garage wenst u fijne feestdagen en zal gesloten zijn van 23/12 tot en met 26/12/2024."
+      special:"de garage zal gesloten zijn van 01/03 tot 03/03/."
     },
     services: {
       title: 'Onze Diensten',
