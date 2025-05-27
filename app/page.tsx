@@ -19,42 +19,48 @@ return (
             backgroundImage: "url('logos/homepage/garage-back.png')",
             filter: "brightness(50%)"
           }} />
-    <div className="relative z-20 text-center text-white px-4">
-      <Image src="/logos/homepage/logo-pneus.png" alt="Bosmans Enghien" width={340} height={35}
-        className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300 mx-auto "
-        style={{
-              filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(1965%) hue-rotate(343deg) brightness(85%) contrast(120%)',
-            }} />
-      <p className="text-xl">{t.hero.subtitle}</p>
+    <div className="relative z-20 text-center text-white px-4 animate-fade-in">
+      <div className="animate-scale-in">
+        <Image src="/logos/homepage/logo-pneus.png" alt="Bosmans Enghien" width={340} height={35}
+          className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300 mx-auto mb-6"
+          style={{
+                filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(1965%) hue-rotate(343deg) brightness(85%) contrast(120%)',
+              }} />
+      </div>
+      <p className="text-xl animate-fade-in-delayed">
+        {t.hero.subtitle}
+      </p>
     </div>
   </section>
 
   {/* Opening Hours Section */}
-  <section className="py-12 bg-background">
-    <div className="special-div text-red-600 flex justify-center py-6 ">
-
-      <TriangleAlert className="w-6 h-6 mx-2" />
-      <h2 className="text-2l font-bold text-center text-red-600 block"> {t.special.title}</h2>
-    </div>
-    <div className="max-w-6xl mx-auto px-4">
-      <h2 className="text-3xl font-bold text-center mb-12 text-foreground">{t.openingHours.title}</h2>
-      <div className="max-w-md mx-auto">
-        <OpeningHours />
-      </div>
-      {/* <div className="max-w-md mx-auto m-5 bg-card p-6 rounded-lg border text-card-foreground ">
-        <div className="w-12 h-12 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center">
-          <AlertCircle className="w-8 h-8 text-red-600 dark:text-red-400" />
+  <section className="py-20 bg-gray-50">
+    <div className="container mx-auto px-4">
+      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
+        <span className="block mb-2 text-red-600">Horaires d'Ouverture</span>
+        <span className="text-3xl font-medium text-gray-600">Quand nous sommes là pour vous</span>
+      </h2>
+      <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-8 max-w-6xl mx-auto px-4">
+        <div className="flex items-center justify-center space-x-3">
+          <TriangleAlert className="w-6 h-6 text-red-600 dark:text-red-400" />
+          <h2 className="text-xl font-bold text-red-600 dark:text-red-400">{t.special.title}</h2>
         </div>
-        <p>{t.openingHours.special}</p>
-      </div> */}
+      </div>
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-md mx-auto bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+          <OpeningHours />
+        </div>
+      </div>
     </div>
-
   </section>
 
   {/* Services Section */}
-  <section className="py-20 bg-muted">
-    <div className="max-w-6xl mx-auto px-4">
-      <h2 className="text-3xl font-bold text-center mb-12 text-foreground">{t.services.title}</h2>
+  <section className="py-20 bg-white">
+    <div className="container mx-auto px-4">
+      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
+        <span className="block mb-2 text-red-600">Nos Services</span>
+        <span className="text-3xl font-medium text-gray-600">Ce que nous vous offrons</span>
+      </h2>
       <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-card p-6 rounded-lg shadow-sm">
           <div className="w-12 h-12 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mb-4">
@@ -75,9 +81,12 @@ return (
   </section>
 
   {/* Contact Info Section */}
-  {/* Contact Info Section */}
-  <section className="bg-background py-16">
-    <div className="max-w-6xl mx-auto px-4">
+  <section className="py-20 bg-white">
+    <div className="container mx-auto px-4">
+      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
+        <span className="block mb-2 text-red-600">Contactez-nous</span>
+        <span className="text-3xl font-medium text-gray-600">Nous sommes à votre écoute</span>
+      </h2>
       <div className="grid gap-8 text-center md:text-left md:grid-cols-3">
         <div className="flex flex-col items-center md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">
           <MapPin className="w-8 h-8 text-red-600 dark:text-red-400" />

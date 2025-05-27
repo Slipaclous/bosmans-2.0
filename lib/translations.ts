@@ -22,7 +22,7 @@ export const translations = {
       cta: 'Prendre rendez-vous'
     },
     special:{
-      title:"L'été arrive à grand pas, n'oubliez pas de venir faire changer vos pneus!",
+      title:"Le garage sera fermé du 29/05 au 31/05 inclus",
     },
     openingHours: {
       title: 'Nos Horaires',
@@ -201,7 +201,7 @@ export const translations = {
       cta: 'Afspraak maken'
     },
     special:{
-      title:"De zomer staat voor de deur, vergeet niet uw banden te vervangen",
+      title:"De garage zal gesloten zijn van 29/05 tot en met 31/05",
     },
     openingHours: {
       title: 'Openingsuren',
