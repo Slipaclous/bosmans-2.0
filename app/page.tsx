@@ -40,12 +40,26 @@ return (
         <span className="block mb-2 text-red-600">Horaires d'Ouverture</span>
         <span className="text-3xl font-medium text-gray-600">Quand nous sommes là pour vous</span>
       </h2>
-      <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-8 max-w-6xl mx-auto px-4">
+      
+      {/* Station Service Alert */}
+      <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-6 max-w-6xl mx-auto">
         <div className="flex items-center justify-center space-x-3">
-          <TriangleAlert className="w-6 h-6 text-red-600 dark:text-red-400" />
-          <h2 className="text-xl font-bold text-red-600 dark:text-red-400">{t.special.title}</h2>
+         
+          <p className="text-lg font-bold text-red-600 dark:text-red-400 text-center">{t.special.title}</p>
         </div>
       </div>
+
+      {/* Garage Closure Alert */}
+      <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-6 mb-8 max-w-6xl mx-auto">
+        <div className="flex items-center justify-center space-x-3">
+          <Clock className="w-6 h-6 text-orange-600 dark:text-orange-400 flex-shrink-0" />
+          <div className="text-center">
+            <h3 className="text-lg font-bold text-orange-600 dark:text-orange-400 mb-1">{t.closure.title}</h3>
+            <p className="text-orange-600 dark:text-orange-400">{t.closure.dates}</p>
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-6xl mx-auto px-4">
         <div className="max-w-md mx-auto bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
           <OpeningHours />

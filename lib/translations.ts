@@ -22,7 +22,11 @@ export const translations = {
       cta: 'Prendre rendez-vous'
     },
     special:{
-      title:"Le garage sera fermé du 29/05 au 31/05 inclus",
+      title:"⚠️ ATTENTION : La station service est fermée définitivement. Vous pouvez faire votre plein chez ESSO derrière la gare d'Enghien. Le garage des pneus et entretien reste ouvert.",
+    },
+    closure: {
+      title: "Fermetures temporaires du garage",
+      dates: "Le garage sera fermé du 19/07 au 02/08 et du 15/08 au 03/08/25 inclus."
     },
     openingHours: {
       title: 'Nos Horaires',
@@ -38,7 +42,7 @@ export const translations = {
         saturday: 'Samedi',
         sunday: 'Dimanche'
       },
-      special:"Le garage sera fermé du 01/03 jusqu'au 03/03."
+      special:"Le garage sera fermé du 19/07 au 02/08 et du 15/08 au 03/08/25 inclus."
     },
     services: {
       title: 'Nos Services',
@@ -201,7 +205,11 @@ export const translations = {
       cta: 'Afspraak maken'
     },
     special:{
-      title:"De garage zal gesloten zijn van 29/05 tot en met 31/05",
+      title:"⚠️ OPGELET: Het tankstation is definitief gesloten. U kunt tanken bij ESSO achter het station van Edingen. De bandengarage en onderhoud blijft open.",
+    },
+    closure: {
+      title: "Tijdelijke sluitingen van de garage",
+      dates: "De garage zal gesloten zijn van 19/07 tot 02/08 en van 15/08 tot 03/08/25 inbegrepen."
     },
     openingHours: {
       title: 'Openingsuren',
@@ -217,7 +225,7 @@ export const translations = {
         saturday: 'Zaterdag',
         sunday: 'Zondag'
       },
-      special:"de garage zal gesloten zijn van 01/03 tot 03/03/."
+      special:"De garage zal gesloten zijn van 19/07 tot 02/08 en van 15/08 tot 03/08/25 inbegrepen."
     },
     services: {
       title: 'Onze Diensten',
