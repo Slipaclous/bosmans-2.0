@@ -38,7 +38,7 @@ return (
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
         <span className="block mb-2 text-red-600">Horaires d'Ouverture</span>
-        <span className="text-3xl font-medium text-gray-600">Quand nous sommes là pour vous</span>
+    
       </h2>
       
       {/* Station Service Alert */}
