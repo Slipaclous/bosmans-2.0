@@ -51,8 +51,8 @@ export default function About() {
             }}
           />
           <div className="relative dark:text-white  z-20 h-full flex flex-col items-center justify-center text-white px-4">
-            <h1 className="text-5xl font-bold mb-4">{t.title}</h1>
-            <p className="text-xl dark:text-white  text-center max-w-2xl">{t.subtitle}</p>
+            <h1 className="text-6xl font-extrabold mb-6 text-center leading-tight">{t.title}</h1>
+            <p className="text-2xl dark:text-white text-center max-w-2xl mb-6 font-medium">{t.subtitle}</p>
           </div>
         </div>
 

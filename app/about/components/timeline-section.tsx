@@ -32,7 +32,7 @@ export function TimelineSection({ language }: TimelineSectionProps) {
       }
     },
     {
-      year: "Aujourd'hui",
+      year: language === "fr" ? "Aujourd'hui" : "Vandaag",
       title: {
         fr: "3ème Génération",
         nl: "3de Generatie"

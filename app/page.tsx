@@ -36,8 +36,8 @@ return (
   {/* Opening Hours Section */}
   <section className="py-20 bg-gray-50">
     <div className="container mx-auto px-4">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
-        <span className="block mb-2 text-red-600">Horaires d'Ouverture</span>
+      <h2 className="text-5xl font-extrabold text-center mb-14 text-gray-900 tracking-tight leading-tight">
+        <span className="block mb-3 text-red-600 text-2xl md:text-3xl font-semibold">{t.openingHours.title}</span>
     
       </h2>
       
@@ -71,9 +71,9 @@ return (
   {/* Services Section */}
   <section className="py-20 bg-white">
     <div className="container mx-auto px-4">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
-        <span className="block mb-2 text-red-600">Nos Services</span>
-        <span className="text-3xl font-medium text-gray-600">Ce que nous vous offrons</span>
+      <h2 className="text-5xl font-extrabold text-center mb-14 text-gray-900 tracking-tight leading-tight">
+        <span className="block mb-3 text-red-600 text-2xl md:text-3xl font-semibold">{t.services.title}</span>
+        <span className="text-3xl md:text-4xl font-medium text-gray-600">{t.services.subtitle}</span>
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-card p-6 rounded-lg shadow-sm">
@@ -97,9 +97,9 @@ return (
   {/* Contact Info Section */}
   <section className="py-20 bg-white">
     <div className="container mx-auto px-4">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
-        <span className="block mb-2 text-red-600">Contactez-nous</span>
-        <span className="text-3xl font-medium text-gray-600">Nous sommes à votre écoute</span>
+      <h2 className="text-5xl font-extrabold text-center mb-14 text-gray-900 tracking-tight leading-tight">
+        <span className="block mb-3 text-red-600 text-2xl md:text-3xl font-semibold">{t.contact.title}</span>
+        <span className="text-3xl md:text-4xl font-medium text-gray-600">{t.contact.subtitle}</span>
       </h2>
       <div className="grid gap-8 text-center md:text-left md:grid-cols-3">
         <div className="flex flex-col items-center md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">

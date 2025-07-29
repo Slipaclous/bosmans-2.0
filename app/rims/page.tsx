@@ -16,8 +16,14 @@ export default function Rims() {
         {/* Hero Section */}
         
 
+        {/* Ayvens Message */}
+        <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-8 max-w-4xl mx-auto">
+          <p className="text-lg font-bold text-green-700 dark:text-green-400 text-center">{t.ayvensMessage}</p>
+        </div>
+
         {/* Partners Section */}
         <section className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-12">{t.partners.title}</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {WHEEL_PARTNERS.map((partner) => (
               <PartnerCard 

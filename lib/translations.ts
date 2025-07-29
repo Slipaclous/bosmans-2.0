@@ -24,6 +24,7 @@ export const translations = {
     special:{
       title:"⚠️ ATTENTION : La station service est fermée définitivement. Vous pouvez faire votre plein chez ESSO derrière la gare d'Enghien. Le garage des pneus et entretien reste ouvert.",
     },
+    ayvensMessage: "Bonne nouvelle pour nos clients Ayvens ! (Lease Plan, Ald-Axus, Belfius) Vous pouvez continuer à venir chez nous pour vos pneus. Merci pour votre confiance.",
     closure: {
       title: "Fermetures temporaires du garage",
       dates: "Le garage sera fermé du 19/07 au 02/08 et du 15/08 au 03/08/25 inclus."
@@ -46,6 +47,7 @@ export const translations = {
     },
     services: {
       title: 'Nos Services',
+      subtitle: 'Ce que nous vous offrons',
       tires: {
         title: 'Services Pneus',
         description: 'Montage, équilibrage et réparation de pneus par des experts'
@@ -163,8 +165,15 @@ export const translations = {
         }
       ]
     },
+    partners: {
+      title: 'Nos Partenaires',
+      subtitle: 'Des solutions adaptées à vos besoins',
+      others: 'Autres Partenaires',
+      othersSubtitle: 'Découvrez nos autres collaborations'
+    },
     contact: {
       title: 'Contactez-Nous',
+      subtitle: 'Nous sommes à votre écoute',
       form: {
         title: 'Envoyez-nous un message',
         name: 'Votre nom',
@@ -207,6 +216,7 @@ export const translations = {
     special:{
       title:"⚠️ OPGELET: Het tankstation is definitief gesloten. U kunt tanken bij ESSO achter het station van Edingen. De bandengarage en onderhoud blijft open.",
     },
+    ayvensMessage: "Goed nieuws voor onze Ayvens klanten ! (Lease Plan, Ald-Axus, Belfius) U kan nog steeds bij ons terecht voor jullie banden. Bedankt voor het vertrouwen.",
     closure: {
       title: "Tijdelijke sluitingen van de garage",
       dates: "De garage zal gesloten zijn van 19/07 tot 02/08 en van 15/08 tot 03/08/25 inbegrepen."
@@ -229,6 +239,7 @@ export const translations = {
     },
     services: {
       title: 'Onze Diensten',
+      subtitle: 'Wat wij u bieden',
       tires: {
         title: 'Bandendiensten',
         description: 'Montage, balancering en reparatie van banden door experts'
@@ -346,8 +357,15 @@ export const translations = {
         }
       ]
     },
+    partners: {
+      title: 'Onze Partners',
+      subtitle: 'Oplossingen op maat van uw behoeften',
+      others: 'Andere Partners',
+      othersSubtitle: 'Ontdek onze andere samenwerkingen'
+    },
     contact: {
       title: 'Contacteer Ons',
+      subtitle: 'Wij staan voor u klaar',
       form: {
         title: 'Stuur ons een bericht',
         name: 'Uw naam',
@@ -360,7 +378,7 @@ export const translations = {
       phone: 'Telefoon',
       email: 'Email',
       hours: 'Openingsuren',
-      location: 'Tussen Herne en Edingen, België',
+      location: 'Edingsesteenweg 67, 1540 Herne',
       weekdays: 'Ma-Vr: 8u-17u',
       saturday: 'Za: 8u-12u',
       sunday: 'Zondag: Gesloten'
