@@ -62,7 +62,7 @@ export function PremiumPartnerCard({
         >
           <Button variant="secondary" size="lg">
             <span className="mr-2">
-              {language === 'fr' ? 'Découvrir LeasePlan' : 'Ontdek LeasePlan'}
+              {language === 'fr' ? 'Découvrir Ayvens' : 'Ontdek Ayvens'}
             </span>
             <ExternalLink className="w-4 h-4" />
           </Button>

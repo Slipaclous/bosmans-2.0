@@ -1,19 +1,14 @@
 export const LEASING_PARTNERS = {
   premium: {
-    name: "LeasePlan",
-    logo: "/logos/leasing/lease-plan.png",
-    website: "https://www.leaseplan.com",
+    name: "Ayvens",
+    logo: "/logos/leasing/ayvens.webp",
+    website: "https://www.ayvens.com",
     description: {
-      fr: "Leader mondial du leasing automobile et de la gestion de flotte, LeasePlan offre des solutions complètes et innovantes pour votre mobilité professionnelle.",
-      nl: "Wereldleider in autoleasing en wagenparkbeheer, LeasePlan biedt complete en innovatieve oplossingen voor uw professionele mobiliteit."
+      fr: "Ayvens, votre partenaire mobilité, propose des solutions de leasing flexibles et efficaces pour les professionnels.",
+      nl: "Ayvens, uw mobiliteitspartner, biedt flexibele en efficiënte leasingoplossingen voor professionals."
     }
   },
   standard: [
-    {
-      name: "ALD Automotive",
-      logo: "/logos/leasing/ald.png",
-      website: "https://www.aldautomotive.be"
-    },
     {
       name: "Alphabet",
       logo: "/logos/leasing/alphabet.png",
@@ -28,11 +23,6 @@ export const LEASING_PARTNERS = {
       name: "Athlon",
       logo: "/logos/leasing/athlon.png",
       website: "https://www.athlon.com"
-    },
-    {
-      name: "Belfius",
-      logo: "/logos/leasing/belfius.png",
-      website: "https://www.belfius.be"
     },
     {
       name: "KBC Lease",

@@ -22,7 +22,12 @@ export const translations = {
       cta: 'Prendre rendez-vous'
     },
     special:{
-      title:"⚠️ ATTENTION : La station service est fermée définitivement. Vous pouvez faire votre plein chez ESSO derrière la gare d'Enghien. Le garage des pneus et entretien reste ouvert.",
+      title:"",
+    },
+    winterReminder: "N’OUBLIEZ PAS DE PRENDRE VOTRE RENDEZ-VOUS POUR LE MONTAGE DE VOS PNEUS HIVER",
+    exceptionalClosure: {
+      title: "Fermeture exceptionnelle du garage",
+      date: "Le garage sera fermé ce samedi 27/09/25 exceptionnellement."
     },
     ayvensMessage: "Bonne nouvelle pour nos clients Ayvens ! (Lease Plan, Ald-Axus, Belfius) Vous pouvez continuer à venir chez nous pour vos pneus. Merci pour votre confiance.",
     closure: {
@@ -186,7 +191,7 @@ export const translations = {
       phone: 'Téléphone',
       email: 'Email',
       hours: 'Horaires',
-      location: 'Edingsesteenweg 67, 1540 Herne',
+      location: 'PATRIOTSESTEENWEG 67 1540 PAJOTTEGEM',
       weekdays: 'Lun-Ven: 8h-17h',
       saturday: 'Sam: 8h-12h',
       sunday: 'Dimanche: Fermé'
@@ -214,7 +219,12 @@ export const translations = {
       cta: 'Afspraak maken'
     },
     special:{
-      title:"⚠️ OPGELET: Het tankstation is definitief gesloten. U kunt tanken bij ESSO achter het station van Edingen. De bandengarage en onderhoud blijft open.",
+      title:"",
+    },
+    winterReminder: "VERGEET UW AFSPRAAK NIET TIJDIG TE MAKEN VOOR HET PLAATSEN VAN UW WINTERBANDEN",
+    exceptionalClosure: {
+      title: "Uitzonderlijke sluiting van de garage",
+      date: "DE garage zal uiteindelijk gesloten zijn op zaterdag 27/09/25."
     },
     ayvensMessage: "Goed nieuws voor onze Ayvens klanten ! (Lease Plan, Ald-Axus, Belfius) U kan nog steeds bij ons terecht voor jullie banden. Bedankt voor het vertrouwen.",
     closure: {
@@ -378,7 +388,7 @@ export const translations = {
       phone: 'Telefoon',
       email: 'Email',
       hours: 'Openingsuren',
-      location: 'Edingsesteenweg 67, 1540 Herne',
+      location: 'PATRIOTSESTEENWEG 67 1540 PAJOTTEGEM',
       weekdays: 'Ma-Vr: 8u-17u',
       saturday: 'Za: 8u-12u',
       sunday: 'Zondag: Gesloten'
