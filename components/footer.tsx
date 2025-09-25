@@ -39,8 +39,8 @@ export function Footer() {
               <h3 className="text-lg font-semibold">{t.contact.address}</h3>
             </div>
             <p className="text-gray-400">
-              Edingsesteenweg 67<br />
-              1540 Herne<br />
+              PATRIOTSESTEENWEG<br />
+              1540 PAJOTTEGEM<br />
               {language === 'fr' ? 'Belgique' : 'België'}
             </p>
           </div>
