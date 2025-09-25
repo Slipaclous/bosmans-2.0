@@ -21,23 +21,13 @@ export default function Leasing() {
           <p className="text-lg font-bold text-green-700 dark:text-green-400 text-center">{t.ayvensMessage}</p>
         </div>
 
-        {/* Premium Partner Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
-              <span className="block mb-2 text-red-600">{t.partners.title}</span>
-              <span className="text-3xl font-medium text-gray-600">{t.partners.subtitle}</span>
-            </h2>
-            <PremiumPartnerCard {...LEASING_PARTNERS.premium} language={language} />
-          </div>
-        </section>
 
         {/* Other Partners Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
-              <span className="block mb-2 text-red-600">{t.partners.others}</span>
-              <span className="text-3xl font-medium text-gray-600">{t.partners.othersSubtitle}</span>
+              <span className="block mb-2 text-red-600">{t.partners.title}</span>
+              <span className="text-3xl font-medium text-gray-600">{t.partners.subtitle}</span>
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {LEASING_PARTNERS.standard.map((partner) => (

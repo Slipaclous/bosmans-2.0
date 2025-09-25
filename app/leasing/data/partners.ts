@@ -10,6 +10,12 @@ export const LEASING_PARTNERS = {
   },
   standard: [
     {
+      name: "Ayvens",
+      logo: "/logos/leasing/ayvens.webp",
+      website: "https://www.ayvens.com",
+     
+    },
+    {
       name: "Alphabet",
       logo: "/logos/leasing/alphabet.png",
       website: "https://www.alphabet.com"
@@ -34,10 +40,6 @@ export const LEASING_PARTNERS = {
       logo: "/logos/leasing/vancia.webp",
       website: "https://www.vancia.be"
     },
-    {
-      name: "J&T",
-      logo: "/logos/leasing/jtauto.webp",
-      website: "https://www.jt-lease.be"
-    }
+  
   ]
 };
