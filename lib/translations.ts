@@ -27,7 +27,7 @@ export const translations = {
     winterReminder: "N’OUBLIEZ PAS DE PRENDRE VOTRE RENDEZ-VOUS POUR LE MONTAGE DE VOS PNEUS HIVER",
     exceptionalClosure: {
       title: "Fermeture exceptionnelle du garage",
-      date: "Le garage sera fermé ce samedi 27/09/25 exceptionnellement."
+      date: "Le garage sera fermé du 10/11 au 12/11 inclus."
     },
     ayvensMessage: "Bonne nouvelle pour nos clients Ayvens ! (Lease Plan, Ald-Axus, Belfius) Vous pouvez continuer à venir chez nous pour vos pneus. Merci pour votre confiance.",
     closure: {
@@ -224,7 +224,7 @@ export const translations = {
     winterReminder: "VERGEET UW AFSPRAAK NIET TIJDIG TE MAKEN VOOR HET PLAATSEN VAN UW WINTERBANDEN",
     exceptionalClosure: {
       title: "Uitzonderlijke sluiting van de garage",
-      date: "DE garage zal uiteindelijk gesloten zijn op zaterdag 27/09/25."
+      date: "De garage is gesloten van 10/11 tot 12/11."
     },
     ayvensMessage: "Goed nieuws voor onze Ayvens klanten ! (Lease Plan, Ald-Axus, Belfius) U kan nog steeds bij ons terecht voor jullie banden. Bedankt voor het vertrouwen.",
     closure: {
