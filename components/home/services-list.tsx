@@ -21,10 +21,10 @@ export function ServicesList() {
                 <div className="flex flex-col lg:flex-row gap-16">
                     {/* Header */}
                     <div className="lg:w-1/3">
-                        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 sticky top-24">
+                        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
                             {t.services.title}
                         </h2>
-                        <p className="text-muted-foreground text-lg mb-8 sticky top-40 max-w-sm">
+                        <p className="text-muted-foreground text-lg mb-8 max-w-sm">
                             {t.services.subtitle}
                         </p>
                     </div>

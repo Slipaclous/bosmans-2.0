@@ -89,14 +89,16 @@ export default function Technical() {
             </div>
 
             {/* Decorative Visual */}
-            <div className="lg:w-1/2 relative">
-              <div className="glass-panel p-2 rounded-3xl relative z-10 rotate-3 transition-transform hover:rotate-0 duration-500">
-                <div className="relative h-[300px] w-full rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="lg:w-1/2 relative w-full mt-8 lg:mt-0">
+              <div className="glass-panel p-2 rounded-3xl relative z-10 md:rotate-3 transition-transform hover:rotate-0 duration-500 w-full">
+                <div className="relative h-[300px] w-full rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 bg-muted">
                   <Image
                     src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                     alt="Inspection"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
+                    priority
                   />
                 </div>
               </div>
