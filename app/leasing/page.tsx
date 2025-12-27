@@ -1,67 +1,111 @@
 "use client";
 
-import { translations } from "@/lib/translations";
 import { useLanguage } from "@/lib/context/language-context";
-import { PremiumPartnerCard } from "./components/premium-partner-card";
+import { translations } from "@/lib/translations";
 import { LEASING_PARTNERS } from "./data/partners";
-import { Card } from "@/components/ui/card";
-import { ExternalLink } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ExternalLink, Check, Briefcase } from "lucide-react";
+import Image from "next/image";
 
 export default function Leasing() {
   const { language } = useLanguage();
   const t = translations[language];
 
   return (
-    <main className="py-16">
-      <div className="max-w-6xl mx-auto px-4">
-        {/* Hero Section remains the same */}
-
-        {/* Ayvens Message */}
-        <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-8 max-w-4xl mx-auto">
-          <p className="text-lg font-bold text-green-700 dark:text-green-400 text-center">{t.ayvensMessage}</p>
+    <main className="bg-background min-h-screen">
+      {/* 1. HERO SECTION - Immersive */}
+      <section className="relative h-[50vh] w-full overflow-hidden flex flex-col justify-center px-4 md:px-12 bg-background">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
+            alt="Leasing Fleet"
+            fill
+            className="object-cover scale-105 animate-slow-zoom grayscale opacity-20 dark:opacity-30"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-transparent to-background/90" />
         </div>
 
+        <div className="max-w-7xl w-full mx-auto relative z-10 text-center">
+          <div className="animate-fade-in-up flex flex-col items-center">
+            <Badge variant="outline" className="mb-8 border-foreground/30 px-6 py-2 text-sm uppercase tracking-[0.2em] text-foreground font-semibold backdrop-blur-md bg-background/30">
+              {language === 'fr' ? 'Professionnels' : 'Professioneel'}
+            </Badge>
 
-        {/* Other Partners Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 tracking-tight">
-              <span className="block mb-2 text-red-600">{t.partners.title}</span>
-              <span className="text-3xl font-medium text-gray-600">{t.partners.subtitle}</span>
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {LEASING_PARTNERS.standard.map((partner) => (
-                <a
-                  key={partner.name}
-                  href={partner.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block group"
-                >
-                  <Card 
-                    className="relative overflow-hidden p-6 hover:shadow-xl transition-all duration-300 bg-card dark:bg-gray-800/30 hover:scale-105 h-full"
-                  >
-                    <div className="h-24 flex items-center justify-center bg-white dark:bg-slate-500 rounded-lg p-3 transition-transform duration-300 group-hover:scale-95">
-                      <img
-                        src={partner.logo}
-                        alt={`${partner.name} logo`}
-                        className="max-h-full max-w-full object-contain filter dark:brightness-90 dark:contrast-125"
-                      />
-                    </div>
-                    <div className="mt-4 text-center">
-                      <span className="text-sm text-red-600/70 dark:text-red-400/70 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors duration-300 flex items-center justify-center">
-                        {language === 'fr' ? 'Visiter le site' : 'Bezoek de website'}
-                        <ExternalLink className="w-3 h-3 ml-1" />
-                      </span>
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-red-50/50 to-transparent dark:from-red-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </Card>
-                </a>
-              ))}
-            </div>
+            <h1 className="font-display font-black text-[8vw] md:text-[6vw] leading-[0.9] text-foreground mb-8 tracking-tighter">
+              LEASING
+            </h1>
+
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-light leading-relaxed">
+              {t.leasing.title}
+            </p>
           </div>
-        </section>
-      </div>
+        </div>
+
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-muted/30 to-transparent z-10" />
+      </section>
+
+      {/* 2. INTRODUCTION - Stepped Surface */}
+      <section className="py-24 relative bg-muted/30 dark:bg-muted/10 overflow-hidden border-t border-border/50">
+        <div className="container px-4 md:px-12 mx-auto max-w-6xl text-center">
+
+          {/* 2. INTRODUCTION - Stepped Surface */}
+          <section className="py-24 relative bg-muted/30 dark:bg-muted/10 overflow-hidden border-t border-border/50">
+            <div className="container px-4 md:px-12 mx-auto max-w-6xl text-center">
+              {/* Ayvens Highlight Box */}
+              <div className="glass-panel border-l-4 border-l-green-500 bg-green-500/5 p-8 rounded-r-3xl text-left transform hover:translate-x-2 transition-transform duration-500 max-w-4xl mx-auto">
+                <div className="flex items-start gap-6">
+                  <div className="p-3 bg-green-500/10 rounded-full shrink-0 hidden md:block">
+                    <Check className="w-6 h-6 text-green-600 dark:text-green-400" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg text-green-700 dark:text-green-400 mb-2">Ayvens Partner</h4>
+                    <p className="text-muted-foreground">{t.ayvensMessage}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      {/* 3. PARTNERS - Clean Grid with Soft Glow */}
+      <section className="py-24 bg-background border-t border-border/50">
+        <div className="container px-4 md:px-12 mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="font-display font-bold text-3xl md:text-4xl mb-6">{t.partners.title}</h2>
+            <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {LEASING_PARTNERS.standard.map((partner, index) => (
+              <a
+                key={index}
+                href={partner.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex flex-col items-center justify-center h-48 rounded-3xl border border-border/50 bg-card hover:bg-muted/5 transition-all duration-300 overflow-hidden"
+              >
+                {/* Soft Glow */}
+                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-primary/5 rounded-full blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+
+                <div className="relative z-10 w-full h-20 px-8 grayscale group-hover:grayscale-0 opacity-60 group-hover:opacity-100 transition-all duration-500 dark:invert">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+
+                <div className="absolute bottom-6 flex items-center text-xs font-bold text-muted-foreground/0 group-hover:text-primary transition-all duration-300 translate-y-4 group-hover:translate-y-0">
+                  <span className="mr-2">Visit</span>
+                  <ExternalLink className="w-3 h-3" />
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

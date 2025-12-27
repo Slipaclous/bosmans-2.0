@@ -21,9 +21,11 @@ export const translations = {
       subtitle: 'Votre spécialiste en pneus, depuis 90 ans',
       cta: 'Prendre rendez-vous'
     },
-    special:{
-      title:"",
+    special: {
+      title: "",
     },
+    winterInfoTitle: "Info Hiver",
+    emergencyContact: "Urgence & Contact",
     winterReminder: "N’OUBLIEZ PAS DE PRENDRE VOTRE RENDEZ-VOUS POUR LE MONTAGE DE VOS PNEUS HIVER",
     exceptionalClosure: {
       title: "Fermeture exceptionnelle du garage",
@@ -48,7 +50,7 @@ export const translations = {
         saturday: 'Samedi',
         sunday: 'Dimanche'
       },
-      special:"Le garage sera fermé du 19/07 au 02/08 et du 15/08 au 03/08/25 inclus."
+      special: "Le garage sera fermé du 19/07 au 02/08 et du 15/08 au 03/08/25 inclus."
     },
     services: {
       title: 'Nos Services',
@@ -218,9 +220,11 @@ export const translations = {
       subtitle: 'Uw specialist in banden, voor 90 jaar',
       cta: 'Afspraak maken'
     },
-    special:{
-      title:"",
+    special: {
+      title: "",
     },
+    winterInfoTitle: "Winter Info",
+    emergencyContact: "Noodgeval & Contact",
     winterReminder: "VERGEET UW AFSPRAAK NIET TIJDIG TE MAKEN VOOR HET PLAATSEN VAN UW WINTERBANDEN",
     exceptionalClosure: {
       title: "Uitzonderlijke sluiting van de garage",
@@ -245,7 +249,7 @@ export const translations = {
         saturday: 'Zaterdag',
         sunday: 'Zondag'
       },
-      special:"De garage zal gesloten zijn van 19/07 tot 02/08 en van 15/08 tot 03/08/25 inbegrepen."
+      special: "De garage zal gesloten zijn van 19/07 tot 02/08 en van 15/08 tot 03/08/25 inbegrepen."
     },
     services: {
       title: 'Onze Diensten',

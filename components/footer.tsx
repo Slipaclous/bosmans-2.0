@@ -10,85 +10,96 @@ export function Footer() {
   const t = translations[language];
 
   return (
-    <footer className="bg-gray-900 text-white py-12 ">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
-          {/* Logo and Description */}
-          <div className="md:col-span-1">
-            <Image
-              src="/logos/site_logo/text-bosmans.png"
-              alt="Bosmans"
-              width={140}
-              height={35}
-              className="dark:invert filter brightness-0 hover:brightness-100 hover:saturate-200 transition-all duration-300 mx-auto md:mx-0"
-              style={{
-                filter: 'brightness(0) saturate(100%) invert(23%) sepia(75%) saturate(1965%) hue-rotate(343deg) brightness(85%) contrast(120%)',
-              }}
-            />
-            <p className="text-gray-400 text-sm mt-4">
+    <footer className="relative bg-[#050505] text-white pt-24 pb-12 overflow-hidden">
+
+
+      <div className="container px-4 md:px-12 mx-auto max-w-7xl relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-20">
+
+          {/* Brand Column */}
+          <div className="lg:col-span-4 space-y-6">
+            <div className="relative w-48 h-12 grayscale hover:grayscale-0 transition-all duration-500">
+              <Image
+                src="/logos/site_logo/text-bosmans.png"
+                alt="Bosmans"
+                fill
+                className="object-contain object-left invert"
+              />
+            </div>
+            <p className="text-neutral-400 text-lg leading-relaxed max-w-sm">
               {language === 'fr'
-                ? 'Votre spécialiste en pneus depuis 1935'
-                : 'Uw specialist in banden sinds 1935'}
+                ? 'Expert en pneumatiques et services automobiles depuis 1935. Qualité, sécurité et service sur mesure.'
+                : 'Expert in banden en autoservices sinds 1935. Kwaliteit, veiligheid en service op maat.'}
             </p>
+            <div className="flex gap-4">
+              {/* Social Placeholders could go here */}
+            </div>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-              <MapPin className="w-5 h-5 text-red-500" />
-              <h3 className="text-lg font-semibold">{t.contact.address}</h3>
-            </div>
-            <p className="text-gray-400">
-              PATRIOTSESTEENWEG<br />
-              1540 PAJOTTEGEM<br />
-              {language === 'fr' ? 'Belgique' : 'België'}
-            </p>
-          </div>
+          {/* Spacer */}
+          <div className="hidden lg:block lg:col-span-1" />
 
-          {/* Phone */}
-          <div>
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-              <Phone className="w-5 h-5 text-red-500" />
-              <h3 className="text-lg font-semibold">{t.contact.phone}</h3>
-            </div>
-            <p className="text-gray-400">02 396 11 84</p>
-            <p className="text-gray-400">0486/92.04.04</p>
-          </div>
+          {/* Quick Info Grid */}
+          <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-8">
 
-          {/* Opening Hours */}
-          <div>
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-              <Clock className="w-5 h-5 text-red-500" />
-              <h3 className="text-lg font-semibold">{t.contact.hours}</h3>
+            {/* Address */}
+            <div className="space-y-4">
+              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary mb-2">
+                <MapPin className="w-5 h-5" />
+              </div>
+              <h3 className="font-display font-bold text-xl">Address</h3>
+              <address className="not-italic text-neutral-400 leading-relaxed">
+                Edingsesteenweg 67<br />
+                1540 Herne<br />
+                {language === 'fr' ? 'Belgique' : 'België'}
+              </address>
             </div>
-            <div className="text-gray-400 space-y-1">
-              <p>
-                {language === 'fr' ? 'Lundi - Vendredi' : 'Maandag - Vrijdag'}
-                <br />
-                08:00 - 12:00, 13:00 - 17:00
-              </p>
-              <p>
-                {language === 'fr' ? 'Samedi' : 'Zaterdag'}
-                <br />
-                08:00 - 12:00
-              </p>
-              <p>
-                {language === 'fr' ? 'Dimanche' : 'Zondag'}
-                <br />
-                {language === 'fr' ? 'Fermé' : 'Gesloten'}
-              </p>
+
+            {/* Contact */}
+            <div className="space-y-4">
+              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary mb-2">
+                <Phone className="w-5 h-5" />
+              </div>
+              <h3 className="font-display font-bold text-xl">Contact</h3>
+              <div className="text-neutral-400 space-y-2">
+                <p className="hover:text-white transition-colors">02 396 11 84</p>
+                <p className="hover:text-white transition-colors">0486/92.04.04</p>
+                <p className="text-sm pt-2 hover:text-white transition-colors">bosmans.anne@outlook.com</p>
+              </div>
             </div>
-            
+
+            {/* Hours */}
+            <div className="space-y-4">
+              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary mb-2">
+                <Clock className="w-5 h-5" />
+              </div>
+              <h3 className="font-display font-bold text-xl">Open</h3>
+              <div className="text-neutral-400 space-y-1 text-sm">
+                <p>
+                  <span className="block text-white font-medium">{language === 'fr' ? 'Lun - Ven' : 'Ma - Vr'}</span>
+                  08:00-12:00 / 13:00-18:00
+                </p>
+                <p className="pt-2">
+                  <span className="block text-white font-medium">{language === 'fr' ? 'Samedi' : 'Zaterdag'}</span>
+                  08:00-12:00
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          © {new Date().getFullYear()}{' '}
-          {language === 'fr'
-            ? 'Bosmans Passion Pneu Herne. Tous droits réservés.'
-            : 'Bosmans Banden. Alle rechten voorbehouden.'}
-            <a className="hover:text-red-600 block" href="https://www.gminor.dev"> Made by G-Minor</a>
+        {/* Bottom Bar */}
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-neutral-500">
+          <p>© {new Date().getFullYear()} Bosmans. {language === 'fr' ? 'Tous droits réservés' : 'Alle rechten voorbehouden'}.</p>
+          <div className="flex items-center gap-6">
+            <a href="#" className="hover:text-white transition-colors">Privacy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms</a>
+            <a href="https://www.gminor.dev" className="hover:text-primary transition-colors flex items-center gap-2">
+              <span className="w-1 h-1 rounded-full bg-primary" />
+              Made by G-Minor
+            </a>
+          </div>
         </div>
       </div>
     </footer>

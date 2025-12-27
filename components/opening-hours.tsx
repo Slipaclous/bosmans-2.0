@@ -35,7 +35,7 @@ export function OpeningHours() {
   ];
 
   return (
-    <Card className="p-6 bg-card">
+    <Card className="p-6 bg-transparent border-none shadow-none">
       <div className="flex items-center gap-4 mb-6">
         <div className="w-12 h-12 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center">
           <Clock className="w-6 h-6 text-red-600 dark:text-red-400" />
@@ -57,18 +57,17 @@ export function OpeningHours() {
           const isToday = currentTime.getDay() === index;
 
           return (
-            <div 
+            <div
               key={day}
-              className={`flex justify-between py-1 ${
-                isToday 
-                  ? 'font-semibold bg-gray-50 dark:bg-gray-800/50 -mx-2 px-2 rounded' 
+              className={`flex justify-between py-1 ${isToday
+                  ? 'font-semibold bg-gray-50 dark:bg-gray-800/50 -mx-2 px-2 rounded'
                   : ''
-              }`}
+                }`}
             >
               <span className="text-foreground">{day}</span>
               <span className="text-muted-foreground">
                 {hours ? (
-                  hours.pause ? 
+                  hours.pause ?
                     `${hours.open} - ${hours.pause.start}, ${hours.pause.end} - ${hours.close}` :
                     `${hours.open} - ${hours.close}`
                 ) : t.openingHours.closed}

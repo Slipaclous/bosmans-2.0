@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Outfit } from 'next/font/google';
 import { LanguageProvider } from '@/lib/context/language-context';
 import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageSwitcher } from '@/components/language-switcher';
@@ -10,14 +10,15 @@ import { MobileNav } from '@/components/mobile-nav/mobile-nav';
 import { Footer } from '@/components/footer';
 import Image from 'next/image';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' });
 
 export const metadata: Metadata = {
   title: 'Bosmans banden pneus - Enghien-Hernes',
   description:
     'Votre garage spécialisé en pneus et réparations automobiles entre Hernes et Enghien. Services professionnels et expertise garantie.',
-  icons:{
-    icon:'/favicon.ico',
+  icons: {
+    icon: '/favicon.ico',
   },
 };
 
@@ -28,13 +29,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-       <head>
-       <link rel="icon" href="/favicon.ico" />
+      <head>
+        <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </head>
-      <body className={`${inter.className} flex flex-col min-h-screen`}>
+      <body className={`${inter.variable} ${outfit.variable} font-sans flex flex-col min-h-screen`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
