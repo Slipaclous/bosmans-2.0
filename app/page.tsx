@@ -67,7 +67,7 @@ return (
               </div>
             </div>
           </Reveal>
-          <Reveal delayMs={100}>
+          {/* <Reveal delayMs={100}>
             <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-6">
               <div className="flex items-center gap-3">
                 <Clock className="w-6 h-6 text-orange-600 dark:text-orange-400 flex-shrink-0" />
@@ -77,7 +77,7 @@ return (
                 </div>
               </div>
             </div>
-          </Reveal>
+          </Reveal> */}
           <Reveal delayMs={200}>
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="bg-card/60 backdrop-blur p-5 rounded-xl border border-border/50 text-center sm:text-left">
