@@ -23,9 +23,9 @@ export default function Home() {
               '@context': 'https://schema.org',
               '@type': 'AutoRepair',
               name: 'Bosmans Pneus',
-              image: 'https://bosmans-pneus.be/logos/homepage/garage-back.png',
-              '@id': 'https://bosmans-pneus.be',
-              url: 'https://bosmans-pneus.be',
+              image: 'https://bosmansbandenpneus.com/logos/homepage/garage-back.png',
+              '@id': 'https://bosmansbandenpneus.com',
+              url: 'https://bosmansbandenpneus.com',
               telephone: '+3223961184',
               address: {
                 '@type': 'PostalAddress',

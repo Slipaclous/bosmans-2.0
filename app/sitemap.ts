@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://bosmans-pneus.be'; // TODO: Update with actual domain
+    const baseUrl = 'https://bosmansbandenpneus.com'; // TODO: Update with actual domain
 
     return [
         {

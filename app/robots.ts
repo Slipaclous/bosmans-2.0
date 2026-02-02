@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/api/',
         },
-        sitemap: 'https://bosmans-pneus.be/sitemap.xml', // TODO: Update with actual domain
+        sitemap: 'https://bosmansbandenpneus.com/sitemap.xml', // TODO: Update with actual domain
     };
 }

@@ -13,7 +13,7 @@ import Image from 'next/image';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bosmans-pneus.be'), // TODO: Update with actual domain
+  metadataBase: new URL('https://bosmansbandenpneus.com'), // TODO: Update with actual domain
   title: {
     default: 'Bosmans Pneus | Garage Enghien-Hernes',
     template: '%s | Bosmans Pneus'
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_BE',
-    url: 'https://bosmans-pneus.be',
+    url: 'https://bosmansbandenpneus.com',
     title: 'Bosmans Pneus | Garage Enghien-Hernes',
     description: 'Expert en pneus et mécanique automobile depuis 1935. Service de qualité à Enghien-Hernes.',
     siteName: 'Bosmans Pneus',
