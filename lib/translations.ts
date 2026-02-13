@@ -21,13 +21,13 @@ export const translations = {
       subtitle: 'Votre spécialiste en pneus, depuis 90 ans',
       cta: 'Prendre rendez-vous'
     },
-    special:{
-      title:"",
+    special: {
+      title: "",
     },
     winterReminder: "N’OUBLIEZ PAS DE PRENDRE VOTRE RENDEZ-VOUS POUR LE MONTAGE DE VOS PNEUS HIVER",
     exceptionalClosure: {
       title: "Fermeture exceptionnelle du garage",
-      date: "Le garage sera fermé à partir du 24/12 à midi jusqu'au 28/12/25 inclus.\nEt le 31/12 à midi jusqu'au 04/01/2026 inclus.\n\nJoyeuses fêtes de fin d'année et une bonne année 2026."
+      date: "Le garage sera fermé du 16/02 au 21/02 inclus."
     },
     ayvensMessage: "Bonne nouvelle pour nos clients Ayvens ! (Lease Plan, Ald-Axus, Belfius) Vous pouvez continuer à venir chez nous pour vos pneus. Merci pour votre confiance.",
     closure: {
@@ -48,7 +48,7 @@ export const translations = {
         saturday: 'Samedi',
         sunday: 'Dimanche'
       },
-      special:"Le garage sera fermé du 19/07 au 02/08 et du 15/08 au 03/08/25 inclus."
+      special: "Le garage sera fermé du 16/02 au 21/02 inclus."
     },
     services: {
       title: 'Nos Services',
@@ -218,13 +218,13 @@ export const translations = {
       subtitle: 'Uw specialist in banden, voor 90 jaar',
       cta: 'Afspraak maken'
     },
-    special:{
-      title:"",
+    special: {
+      title: "",
     },
     winterReminder: "VERGEET UW AFSPRAAK NIET TIJDIG TE MAKEN VOOR HET PLAATSEN VAN UW WINTERBANDEN",
     exceptionalClosure: {
       title: "Uitzonderlijke sluiting van de garage",
-      date: "De garage zal gesloten zijn vanaf 24/12 's middags tot en met 28/12/25.\nEn van 31/12 's middags tot en met 04/01/2026.\n\nPrettige feestdagen en een gelukkig nieuwjaar 2026."
+      date: "De garage zal gesloten van 16/02 tot en met 21/02."
     },
     ayvensMessage: "Goed nieuws voor onze Ayvens klanten ! (Lease Plan, Ald-Axus, Belfius) U kan nog steeds bij ons terecht voor jullie banden. Bedankt voor het vertrouwen.",
     closure: {
@@ -245,7 +245,7 @@ export const translations = {
         saturday: 'Zaterdag',
         sunday: 'Zondag'
       },
-      special:"De garage zal gesloten zijn van 19/07 tot 02/08 en van 15/08 tot 03/08/25 inbegrepen."
+      special: "De garage is gesloten van 16/02 tot en met 21/02."
     },
     services: {
       title: 'Onze Diensten',
