@@ -27,12 +27,12 @@ export const translations = {
     winterReminder: "NOUS VOUS SOUHAITONS UN BEL ÉTÉ.",
     exceptionalClosure: {
       title: "Fermeture exceptionnelle du garage",
-      date: "Le garage sera fermé du 18/07/2026 au 02/08/2026 inclus."
+      date: "Le garage sera fermé jusqu'au 30 inclus."
     },
     ayvensMessage: "Bonne nouvelle pour nos clients Ayvens ! (Lease Plan, Ald-Axus, Belfius) Vous pouvez continuer à venir chez nous pour vos pneus. Merci pour votre confiance.",
     closure: {
       title: "Fermetures temporaires du garage",
-      dates: "Le garage sera fermé du 19/07 au 02/08 et du 15/08 au 03/08/25 inclus."
+      dates: "Le garage sera fermé jusqu'au 30 inclus."
     },
     openingHours: {
       title: 'Nos Horaires',
@@ -48,7 +48,7 @@ export const translations = {
         saturday: 'Samedi',
         sunday: 'Dimanche'
       },
-      special: "Le garage sera fermé du 18/07/2026 au 02/08/2026 inclus."
+      special: "Le garage sera fermé jusqu'au 30 inclus."
     },
     services: {
       title: 'Nos Services',
@@ -224,12 +224,12 @@ export const translations = {
     winterReminder: "WIJ WENSEN JULLIE EEN MOOIE ZOMER.",
     exceptionalClosure: {
       title: "Uitzonderlijke sluiting van de garage",
-      date: "De garage zal gesloten zijn van 18/07/2026 tot en met 02/08/2026."
+      date: "De garage zal gesloten zijn tot en met 30 inbegrepen."
     },
     ayvensMessage: "Goed nieuws voor onze Ayvens klanten ! (Lease Plan, Ald-Axus, Belfius) U kan nog steeds bij ons terecht voor jullie banden. Bedankt voor het vertrouwen.",
     closure: {
       title: "Tijdelijke sluitingen van de garage",
-      dates: "De garage zal gesloten zijn van 19/07 tot 02/08 en van 15/08 tot 03/08/25 inbegrepen."
+      dates: "De garage zal gesloten zijn tot en met 30 inbegrepen."
     },
     openingHours: {
       title: 'Openingsuren',
@@ -245,7 +245,7 @@ export const translations = {
         saturday: 'Zaterdag',
         sunday: 'Zondag'
       },
-      special: "De garage is gesloten van 18/07/2026 tot en met 02/08/2026."
+      special: "De garage is gesloten tot en met 30 inbegrepen."
     },
     services: {
       title: 'Onze Diensten',
