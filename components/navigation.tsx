@@ -22,19 +22,24 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="hidden md:flex space-x-6">
-      {links.map((link) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          className={cn(
-            "text-gray-600 dark:text-white dark:hover:text-red-600 hover:text-red-600 transition-colors",
-            pathname === link.href && "text-red-600 font-semibold"
-          )}
-        >
-          {link.label}
-        </Link>
-      ))}
+    <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
+      {links.map((link) => {
+        const isActive = pathname === link.href;
+        return (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={cn(
+              "px-3 py-1.5 text-sm font-medium transition-colors rounded-sm",
+              isActive
+                ? "bg-zinc-100 text-red-600 dark:bg-zinc-800/80 dark:text-red-400 font-semibold"
+                : "text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-50 dark:hover:bg-zinc-800/40"
+            )}
+          >
+            {link.label}
+          </Link>
+        );
+      })}
     </nav>
   );
 }

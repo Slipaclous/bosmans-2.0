@@ -24,15 +24,15 @@ export const translations = {
     special: {
       title: "",
     },
-    winterReminder: "NOUS VOUS SOUHAITONS UN BEL ÉTÉ.",
+    winterReminder: "Pensez à prendre rendez-vous pour le montage de vos pneus hiver.",
     exceptionalClosure: {
-      title: "Fermeture exceptionnelle du garage",
-      date: "Le garage sera fermé jusqu'au 30 inclus."
+      title: "Information Horaires",
+      date: "Pour le mois de septembre 2026, le garage sera fermé tous les samedis."
     },
     ayvensMessage: "Bonne nouvelle pour nos clients Ayvens ! (Lease Plan, Ald-Axus, Belfius) Vous pouvez continuer à venir chez nous pour vos pneus. Merci pour votre confiance.",
     closure: {
-      title: "Fermetures temporaires du garage",
-      dates: "Le garage sera fermé jusqu'au 30 inclus."
+      title: "Information Horaires",
+      dates: "Pour le mois de septembre 2026, le garage sera fermé tous les samedis."
     },
     openingHours: {
       title: 'Nos Horaires',
@@ -48,7 +48,7 @@ export const translations = {
         saturday: 'Samedi',
         sunday: 'Dimanche'
       },
-      special: "Le garage sera fermé jusqu'au 30 inclus."
+      special: "Pour le mois de septembre 2026, le garage sera fermé tous les samedis."
     },
     services: {
       title: 'Nos Services',
@@ -129,7 +129,10 @@ export const translations = {
       }
     },
     technical: {
-      title: 'Contrôle Technique',
+      title: 'Préparation au Contrôle Technique',
+      category: 'SÉCURITÉ & HOMOLOGATION',
+      badge: 'Inspection certifiée en atelier',
+      stepLabel: 'Étape',
       description: {
         title: 'Préparation au Contrôle Technique',
         content: "Notre garage vérifie l'état des pneus , le réglage des phares, les plaquettes et les disques de freins ainsi que les ammortisseurs et nous faisons éventuellement le petit entretien de votre voiture"
@@ -221,15 +224,15 @@ export const translations = {
     special: {
       title: "",
     },
-    winterReminder: "WIJ WENSEN JULLIE EEN MOOIE ZOMER.",
+    winterReminder: "Denk eraan om tijdig een afspraak te maken voor uw winterbanden.",
     exceptionalClosure: {
-      title: "Uitzonderlijke sluiting van de garage",
-      date: "De garage zal gesloten zijn tot en met 30 inbegrepen."
+      title: "Informatie Openingsuren",
+      date: "Voor de maand september 2026 is de garage elke zaterdag gesloten."
     },
     ayvensMessage: "Goed nieuws voor onze Ayvens klanten ! (Lease Plan, Ald-Axus, Belfius) U kan nog steeds bij ons terecht voor jullie banden. Bedankt voor het vertrouwen.",
     closure: {
-      title: "Tijdelijke sluitingen van de garage",
-      dates: "De garage zal gesloten zijn tot en met 30 inbegrepen."
+      title: "Informatie Openingsuren",
+      dates: "Voor de maand september 2026 is de garage elke zaterdag gesloten."
     },
     openingHours: {
       title: 'Openingsuren',
@@ -245,7 +248,7 @@ export const translations = {
         saturday: 'Zaterdag',
         sunday: 'Zondag'
       },
-      special: "De garage is gesloten tot en met 30 inbegrepen."
+      special: "Voor de maand september 2026 is de garage elke zaterdag gesloten."
     },
     services: {
       title: 'Onze Diensten',
@@ -327,6 +330,9 @@ export const translations = {
     },
     technical: {
       title: 'Technische Controle',
+      category: 'VEILIGHEID & HOMOLOGATIE',
+      badge: 'Gecertificeerde inspectie in werkplaats',
+      stepLabel: 'Stap',
       description: {
         title: 'Voorbereiding op Technische Controle',
         content: 'Onze garage controleren de staat van de banden, de afstelling van de lichten, de remblokken en remschijven, evenals de schokdempers, en we voeren eventueel het kleine onderhoud van uw auto uit.'

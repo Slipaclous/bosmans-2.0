@@ -21,7 +21,7 @@ export const WHEEL_PARTNERS = [
         "Kwaliteitsgarantie"
       ]
     },
-    image: "logos/rims/atraxion-jantee.png"
+    image: "/logos/rims/atraxion-jantee.png"
   },
   {
     name: "Alcar",
@@ -45,6 +45,6 @@ export const WHEEL_PARTNERS = [
         "Brede compatibiliteit"
       ]
     },
-    image: "logos/rims/alcar-backgrounds.jpg"
+    image: "/logos/rims/alcar-backgrounds.jpg"
   }
 ];

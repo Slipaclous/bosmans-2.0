@@ -14,24 +14,21 @@ interface HistorySectionProps {
 export function HistorySection({ content }: HistorySectionProps) {
   return (
     <section className="mb-16">
-      <Card className="p-8 relative overflow-hidden">
-        <div className="absolute top-0 dark:text-white  right-0 w-64 h-64 bg-red-500/5 rounded-full -translate-y-32 translate-x-32" />
-        <div className="relative z-10">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-              <History className="w-6 h-6 text-red-600" />
-            </div>
-            <h2 className="text-3xl font-bold">{content.title}</h2>
+      <div className="border border-border bg-card p-6 md:p-8 rounded-sm">
+        <div className="flex items-center gap-3 mb-6 pb-4 border-b border-border">
+          <div className="w-9 h-9 border border-border bg-muted/40 rounded-sm flex items-center justify-center text-red-600 dark:text-red-400">
+            <History className="w-4 h-4" />
           </div>
-          <div className="space-y-4 dark:text-white ">
-            {content.paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-gray-600 dark:text-white  leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-          </div>
+          <h2 className="text-xl md:text-2xl font-bold tracking-tight text-foreground">{content.title}</h2>
         </div>
-      </Card>
+        <div className="space-y-4 text-sm md:text-base leading-relaxed text-muted-foreground">
+          {content.paragraphs.map((paragraph, index) => (
+            <p key={index}>
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

@@ -47,21 +47,16 @@ export function TimelineSection({ language }: TimelineSectionProps) {
   return (
     <section className="mb-16">
       <div className="relative">
-        <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gray-200" />
-        <div className="space-y-12">
+        <div className="space-y-6">
           {events.map((event, index) => (
-            <div key={index} className="relative">
-              <div className="flex items-center">
-                <div className="flex-1 text-right pr-8">
-                  <Card className="inline-block p-6">
-                    <h3 className="text-xl font-bold mb-2">{event.year}</h3>
-                    <h4 className="text-lg font-semibold mb-2">{event.title[language]}</h4>
-                    <p className="text-gray-600 dark:text-white ">{event.description[language]}</p>
-                  </Card>
-                </div>
-                <div className="w-4 h-4 rounded-full bg-red-600 border-4 border-white shadow" />
-                <div className="flex-1 pl-8" />
+            <div key={index} className="border border-border bg-card p-6 rounded-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <span className="px-3 py-1 bg-zinc-950 text-red-500 text-sm font-bold rounded-sm border border-zinc-800">
+                  {event.year}
+                </span>
+                <h4 className="text-base md:text-lg font-bold text-foreground">{event.title[language]}</h4>
               </div>
+              <p className="text-muted-foreground text-sm max-w-xl leading-relaxed">{event.description[language]}</p>
             </div>
           ))}
         </div>
