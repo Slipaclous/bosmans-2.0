@@ -27,12 +27,12 @@ export const translations = {
     winterReminder: "Pensez à prendre rendez-vous pour le montage de vos pneus hiver.",
     exceptionalClosure: {
       title: "Information Horaires",
-      date: "Pour le mois de septembre 2026, le garage sera fermé tous les samedis."
+      date: "Le garage sera fermé du 02/10 au 03/10 inclus."
     },
     ayvensMessage: "Bonne nouvelle pour nos clients Ayvens ! (Lease Plan, Ald-Axus, Belfius) Vous pouvez continuer à venir chez nous pour vos pneus. Merci pour votre confiance.",
     closure: {
       title: "Information Horaires",
-      dates: "Pour le mois de septembre 2026, le garage sera fermé tous les samedis."
+      dates: "Le garage sera fermé du 02/10 au 03/10 inclus."
     },
     openingHours: {
       title: 'Nos Horaires',
@@ -227,12 +227,12 @@ export const translations = {
     winterReminder: "Denk eraan om tijdig een afspraak te maken voor uw winterbanden.",
     exceptionalClosure: {
       title: "Informatie Openingsuren",
-      date: "Voor de maand september 2026 is de garage elke zaterdag gesloten."
+      date: "De garage is gesloten van 02/10 t.e.m. 03/10."
     },
     ayvensMessage: "Goed nieuws voor onze Ayvens klanten ! (Lease Plan, Ald-Axus, Belfius) U kan nog steeds bij ons terecht voor jullie banden. Bedankt voor het vertrouwen.",
     closure: {
       title: "Informatie Openingsuren",
-      dates: "Voor de maand september 2026 is de garage elke zaterdag gesloten."
+      dates: "De garage is gesloten van 02/10 t.e.m. 03/10."
     },
     openingHours: {
       title: 'Openingsuren',
